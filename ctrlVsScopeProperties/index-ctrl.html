@@ -1,0 +1,49 @@
+<!DocType HTML>
+<html>
+<head>
+  <title>Controller Vs Scope Properties</title>
+</head>
+<body data-ng-app="myApp">
+  <div data-ng-controller="myController as ctrl">
+    <label data-ng-bind="ctrl.message"></label>
+    </br>
+    <input type="text" data-ng-model="ctrl.message" >
+    </br>
+    <button type="button" data-ng-click="ctrl.alert()">Alert</button>
+    </br>
+    <div data-ng-repeat="number in ctrl.longArray">
+      <label>{{number}}</label>
+    </div>
+
+  </div>
+
+  <script src="../bower_components/angularjs/angular.min.js"></script>
+  <script>
+    angular.module("myApp", [])
+      .controller("myController", myController);
+
+      function myController() {
+        var ctrl = this;
+        ctrl.message = "Hello World!";
+
+        ctrl.alert = function() {
+          alert(ctrl.message);
+        }
+
+        ctrl.longArray = [1,2,3,4,5,6,7,8,9];
+        ctrl.longObjectArray = [
+          {id: 1, value: "number"},
+          {id: 2, value: "number"},
+          {id: 3, value: "number"},
+          {id: 4, value: "number"},
+          {id: 5, value: "number"},
+          {id: 6, value: "number"},
+          {id: 7, value: "number"},
+          {id: 8, value: "number"},
+          {id: 9, value: "number"}
+        ];
+      }
+
+  </script>
+</body>
+</html>

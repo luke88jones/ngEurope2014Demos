@@ -1,0 +1,40 @@
+<!DocType HTML>
+<html>
+<head>
+  <title></title>
+</head>
+<body data-ng-app="myApp">
+  <div data-ng-controller="myController">
+    <input type="checkbox" data-ng-model="showTop" />
+    <div data-ng-if="showTop">
+      <h2>{{top.header}}</h2>
+      <ul>
+        <li data-ng-repeat="person in ::testData">
+            <span>{{person.age}} </span>
+            <span>{{person.name}} </span>
+            <span>{{person.phone}} </span>
+        </li>
+      </ul>
+    </div>
+    <div data-ng-if="!showTop">
+      <h2>{{bottom.header}}</h2>
+      <ul>
+        <li data-ng-repeat="person in ::testData">
+            <span>{{::person.age}} </span>
+            <span>{{::person.name}} </span>
+            <span>{{::person.phone}} </span>
+            <span>{{::person.balance}} </span>
+            <span>{{::person.company}} </span>
+            <span>{{::person.address}} </span>
+            <span>{{::person.email}} </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="../bower_components/angularjs/angular.min.js"></script>
+  <script src="./controller.js"></script>
+  <script src="./testData.js"></script>
+
+</body>
+</html>

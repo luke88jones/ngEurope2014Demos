@@ -1,0 +1,30 @@
+<!DocType HTML>
+<html>
+<head>
+  <title>Stopping Watchers</title>
+</head>
+<body data-ng-app="myApp">
+  <div data-ng-controller="myController">
+    <label>{{message}}</label>
+    </br>
+    <input type="text" data-ng-model="message">
+  </div>
+
+  <script src="../bower_components/angularjs/angular.min.js"></script>
+  <script>
+    angular.module("myApp", [])
+      .controller("myController", myController);
+
+      myController.$inject = ["$scope"];
+
+      function myController($scope) {
+        $scope.message = "Hello World!";
+
+        $scope.$watch("message", function(_new, _old) {
+          console.log("Watching ", _new);
+        });
+      }
+
+  </script>
+</body>
+</html>
