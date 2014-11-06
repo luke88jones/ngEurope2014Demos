@@ -1,0 +1,50 @@
+<templateSet group="Apex_AngularJS">
+  <template name="ngc" value="(function() {&#10;    angular.module(&quot;&quot;)&#10;        .controller(&quot;$controllerName$&quot;, $controllerName$);&#10;    &#10;    $controllerName$.$$inject = [&#10;    &#10;    ];&#10;    &#10;    function $controllerName$(&#10;    &#10;    ){&#10;    }&#10;})();" description="Apex style controller constructor" toReformat="false" toShortenFQNames="true">
+    <variable name="controllerName" expression="snakeCase(String)" defaultValue="controller" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ngd" value="(function() {&#10;    angular.module(&quot;&quot;)&#10;        .directive(&quot;$directiveName$&quot;, $directiveName$);&#10;    &#10;    $directiveName$.$$inject = [&#10;    &#10;    ];&#10;    &#10;    function $directiveName$(&#10;        return {&#10;            &#10;        }&#10;    ){&#10;    }&#10;})();" description="Apex style directive constructor" toReformat="false" toShortenFQNames="true">
+    <variable name="directiveName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ngs" value="(function() {&#10;    angular.module(&quot;&quot;)&#10;        .controller(&quot;$serviceName$&quot;, $serviceName$);&#10;    &#10;    $serviceName$.$$inject = [&#10;    &#10;    ];&#10;    &#10;    function $serviceName$(&#10;    &#10;    ){&#10;    }&#10;})();" description="Apex style service constructor" toReformat="false" toShortenFQNames="true">
+    <variable name="serviceName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ngf" value="(function() {&#10;    angular.module(&quot;&quot;)&#10;        .directive(&quot;$factoryName$&quot;, $factoryName$);&#10;    &#10;    $factoryName$.$$inject = [&#10;    &#10;    ];&#10;    &#10;    function $factoryName$(&#10;        return {&#10;            &#10;        }&#10;    ){&#10;    }&#10;})();" description="Apex style factory constructor" toReformat="false" toShortenFQNames="true">
+    <variable name="factoryName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ngft" value="(function() {&#10;    angular.module(&quot;&quot;)&#10;        .controller(&quot;$filterName$&quot;, $filterName$);&#10;    &#10;    $filterName$.$$inject = [&#10;    &#10;    ];&#10;    &#10;    function $filterName$(&#10;    &#10;    ){&#10;    }&#10;})();" description="Apex style filter constructor" toReformat="false" toShortenFQNames="true">
+    <variable name="filterName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="nga" value="(function() {&#10;    angular.module(&quot;$moduleName$&quot;, []);&#10;})();" description="Apex Style app constructor" toReformat="false" toShortenFQNames="true">
+    <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
