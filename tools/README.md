@@ -6,27 +6,31 @@ The Apex_AngularJS.xml file in this directory contains WebStorm live templates w
 * Controller - *ngc* (Note if you're using the existing AngularJS templates for Webstorm you'll need to disable the controller template)
 ```
 (function() {
-  angular.module("myApp")
-    .controller("myController", myController);
+    "use strict";
 
-  myController.$inject = [
+    angular.module("myApp")
+      .controller("myController", myController);
 
-  ];
+    myController.$inject = [
 
-  function myController(
+    ];
 
-  ){
-    var ctrl = this;
-    ctrl.helloWorld = function() {
-        console.log("Hello World");
-    };
-  }
+    function myController(
+
+    ){
+      var ctrl = this;
+      ctrl.helloWorld = function() {
+          console.log("Hello World");
+      };
+    }
 })();
 ```
 
 * Directive - *ngd*
 ```
 (function() {
+    "use strict";
+
     angular.module("app")
         .directive("myDirective", myDirective);
 
@@ -53,6 +57,8 @@ The Apex_AngularJS.xml file in this directory contains WebStorm live templates w
 * Factory - *ngf*
 ```
 (function() {
+    "use strict";
+
     angular.module("app")
         .factory("myFactory", myFactory);
 
@@ -73,6 +79,8 @@ The Apex_AngularJS.xml file in this directory contains WebStorm live templates w
 * Service - *ngs*
 ```
 (function() {
+    "use strict";
+
     angular.module("app")
         .service("myService", myService);
 
@@ -92,6 +100,8 @@ The Apex_AngularJS.xml file in this directory contains WebStorm live templates w
 * Filter - *ngft*
 ```
 (function() {
+    "use strict";
+
     angular.module("app")
         .filter("myFilter", myFilter);
 
@@ -109,6 +119,8 @@ The Apex_AngularJS.xml file in this directory contains WebStorm live templates w
 * Parser - *ngp*
 ```
 (function() {
+    "use strict";
+
     angular.module("")
         .directive("myParser", myParser);
 
@@ -134,6 +146,8 @@ The Apex_AngularJS.xml file in this directory contains WebStorm live templates w
 * Formatter - *ngfo*
 ```
 (function() {
+    "use strict";
+
     angular.module("app")
         .directive("myFormatter", myFormatter);
 
