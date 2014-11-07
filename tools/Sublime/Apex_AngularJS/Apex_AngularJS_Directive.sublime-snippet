@@ -1,0 +1,35 @@
+<snippet>
+	<description>Directive constructor</description>
+	<content>
+		<![CDATA[
+(function() {
+    "use strict";
+
+    angular.module("$1")
+        .directive("$2", $2);
+
+    $2.\$inject = [
+    	$3
+    ];
+
+    function $2(
+
+    ){
+        return {
+            require: "ngModel",
+            restrict: "", // A, E, C
+            templateUrl: "",
+            scope: {},
+            link: function(scope, element, attrs, ngModelController) {
+
+            }
+        };
+    }
+})();
+		]]>
+	</content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ngd</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>

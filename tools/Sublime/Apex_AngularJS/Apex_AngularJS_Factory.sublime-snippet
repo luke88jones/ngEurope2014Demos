@@ -1,0 +1,29 @@
+<snippet>
+	<description>Factory constructor</description>
+	<content>
+		<![CDATA[
+(function() {
+    "use strict";
+
+    angular.module("$1")
+        .factory("$2", $2);
+
+    $2.\$inject = [
+    	$3
+    ];
+
+    function $2(
+
+    ){
+        return {
+
+        };
+    }
+})();
+		]]>
+	</content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ngf</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>

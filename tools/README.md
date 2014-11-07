@@ -3,8 +3,10 @@
 
 The Apex_AngularJS.xml file in this directory contains WebStorm live templates which implement Angular components according to the Apex style guide. To use these live templates you must copy this file to your local WebStorm templates directory (c:\users\"yourUsername"\.WebStormX\config\templates).
 
+Inside the Sublime folder is a folder containing snippets for these components. Copy this whole folder to your packages/user/ directory
+
 * Controller - *ngc* (Note if you're using the existing AngularJS templates for Webstorm you'll need to disable the controller template)
-```
+```js
 (function() {
     "use strict";
 
@@ -27,7 +29,7 @@ The Apex_AngularJS.xml file in this directory contains WebStorm live templates w
 ```
 
 * Directive - *ngd*
-```
+```js
 (function() {
     "use strict";
 
@@ -55,7 +57,7 @@ The Apex_AngularJS.xml file in this directory contains WebStorm live templates w
 ```
 
 * Factory - *ngf*
-```
+```js
 (function() {
     "use strict";
 
@@ -77,7 +79,7 @@ The Apex_AngularJS.xml file in this directory contains WebStorm live templates w
 ```
 
 * Service - *ngs*
-```
+```js
 (function() {
     "use strict";
 
@@ -98,7 +100,7 @@ The Apex_AngularJS.xml file in this directory contains WebStorm live templates w
 ```
 
 * Filter - *ngft*
-```
+```js
 (function() {
     "use strict";
 
@@ -117,7 +119,7 @@ The Apex_AngularJS.xml file in this directory contains WebStorm live templates w
 ```
 
 * Parser - *ngp*
-```
+```js
 (function() {
     "use strict";
 
@@ -144,7 +146,7 @@ The Apex_AngularJS.xml file in this directory contains WebStorm live templates w
 ```
 
 * Formatter - *ngfo*
-```
+```js
 (function() {
     "use strict";
 
@@ -171,7 +173,7 @@ The Apex_AngularJS.xml file in this directory contains WebStorm live templates w
 ```
 
 * Run block - *ngr*
-```
+```js
 (function() {
     "use strict";
 
@@ -189,3 +191,4 @@ The Apex_AngularJS.xml file in this directory contains WebStorm live templates w
     }
 })();
 ```
+

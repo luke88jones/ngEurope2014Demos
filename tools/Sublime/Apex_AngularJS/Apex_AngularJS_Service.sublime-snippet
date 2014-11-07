@@ -1,0 +1,28 @@
+<snippet>
+	<description>Service constructor</description>
+	<content>
+		<![CDATA[
+(function() {
+    "use strict";
+
+    angular.module("$1")
+        .service("$2", $2);
+
+    $2.\$inject = [
+    	$3
+    ];
+
+    function $2(
+
+    ){
+        var self = this;
+        self.name = "Hello World";
+    }
+})();
+		]]>
+	</content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ngs</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>
