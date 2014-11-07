@@ -63,4 +63,12 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="ngr" value="(function() {&#10;    &quot;use strict&quot;;&#10;    &#10;    angular.module(&quot;$moduleName&quot;)&#10;        .run(runBlock);&#10;    &#10;    runBlock.$$inject = [&#10;    &#10;    ];&#10;    &#10;    function runBlock(&#10;        &#10;    ) {&#10;        }&#10;})();" description="Apex style run block constructor" toReformat="false" toShortenFQNames="true">
+    <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>

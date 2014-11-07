@@ -169,3 +169,23 @@ The Apex_AngularJS.xml file in this directory contains WebStorm live templates w
     }
 })();
 ```
+
+* Run block - *ngr*
+```
+(function() {
+    "use strict";
+
+    angular.module("app")
+        .run(runBlock);
+
+    runBlock.$inject = [
+
+    ];
+
+    function runBlock(
+
+    ) {
+
+    }
+})();
+```
