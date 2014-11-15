@@ -1,0 +1,23 @@
+'.source.js':
+	'Apex factory constructor':
+		'prefix': 'ngf'
+		'body': """
+			(function() {
+				"use strict";
+
+				angular.module("${1:moduleName}")
+						.factory("${2:factoryName}", ${2});
+
+				.$inject = [
+					"$3"
+				];
+
+				function ${2}(
+
+				) {
+						return {
+
+						};
+				}
+			})();
+			"""

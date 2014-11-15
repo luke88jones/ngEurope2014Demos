@@ -1,0 +1,22 @@
+'.source.js':
+	'Apex service constructor':
+		'prefix': 'ngs'
+		'body': """
+			(function() {
+				"use strict";
+
+				angular.module("${1:moduleName}")
+						.service("${2:serviceName}", ${2});
+
+				.$inject = [
+					"$3"
+				];
+
+				function ${2}(
+
+				) {
+						var self = this;
+						self.name = "Hello World";
+				}
+			})();
+			"""

@@ -1,0 +1,21 @@
+'.source.js':
+	'Apex run block constructor':
+		'prefix': 'ngr'
+		'body': """
+			(function() {
+				"use strict";
+
+				angular.module("${1:moduleName}")
+						.run(${2});
+
+				.$inject = [
+					"$3"
+				];
+
+				function ${2}(
+
+				) {
+
+				}
+			})();
+			"""
