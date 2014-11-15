@@ -1,9 +1,19 @@
 # Tools
-### Apex Style templates for Angular
+## Apex Style templates for Angular
+
+### Webstorm
 
 The Apex_AngularJS.xml file in this directory contains WebStorm live templates which implement Angular components according to the Apex style guide. To use these live templates you must copy this file to your local WebStorm templates directory (c:\users\"yourUsername"\.WebStormX\config\templates).
 
+### Sublime
+
 Inside the Sublime folder is a folder containing snippets for these components. Copy this whole folder to your packages/user/ directory
+
+### Atom
+
+Inside the Atom folder is a folder containing snippets for these components. Copy this whole folder to your ~/.atom/packages/ directory
+
+### What's included
 
 * Controller - *ngc* (Note if you're using the existing AngularJS templates for Webstorm you'll need to disable the controller template)
 ```js
@@ -191,4 +201,3 @@ Inside the Sublime folder is a folder containing snippets for these components. 
     }
 })();
 ```
-
