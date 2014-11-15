@@ -3,4 +3,4 @@
 
 * Slides from ng-europe and beyond presentation - http://slides.com/lukejones/ngeuropeandbeyond
 
-* Webstorm Live templates in tools directory 
+* Webstorm, Sublime and Atom snippets in tools directory
