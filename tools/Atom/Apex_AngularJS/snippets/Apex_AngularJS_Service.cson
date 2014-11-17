@@ -8,7 +8,7 @@
 				angular.module("${1:moduleName}")
 						.service("${2:serviceName}", ${2});
 
-				.$inject = [
+				$2.$inject = [
 					"$3"
 				];
 

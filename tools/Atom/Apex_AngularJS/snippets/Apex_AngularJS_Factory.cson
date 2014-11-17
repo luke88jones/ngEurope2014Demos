@@ -8,7 +8,7 @@
 				angular.module("${1:moduleName}")
 						.factory("${2:factoryName}", ${2});
 
-				.$inject = [
+				$2.$inject = [
 					"$3"
 				];
 
